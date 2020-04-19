@@ -31,7 +31,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get('api/whoami', function(req, res) {
+app.get('/api/whoami', function(req, res) {
   var ip = req.headers['x-forwarded-for'] || 
   req.connection.remoteAddress || 
   req.socket.remoteAddress ||
